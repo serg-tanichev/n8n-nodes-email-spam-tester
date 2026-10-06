@@ -58,5 +58,8 @@
     },
     "bugs": {
         "url": "https://github.com/serg-tanichev/n8n-nodes-email-spam-tester/issues"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
