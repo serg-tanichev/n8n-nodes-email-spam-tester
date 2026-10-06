@@ -1,0 +1,21 @@
+{
+	"node": "n8n-nodes-email-spam-tester.emailSpamTester",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": [
+		"Communication",
+		"Development"
+	],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://email-spam-tester.com/n8n/#connecting"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://email-spam-tester.com/n8n/"
+			}
+		]
+	}
+}
