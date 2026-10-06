@@ -25,7 +25,11 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: 'npm ci'
+        # npm install rather than npm ci: npm resolves one transitive dev
+        # dependency of @n8n/node-cli (ignore) differently from its own lock
+        # file, and npm ci refuses that. Dev tooling only; the package has no
+        # runtime dependencies.
+        run: 'npm install --no-audit --no-fund'
 
       - name: Run lint
         run: 'npm run lint'
